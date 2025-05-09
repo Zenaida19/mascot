@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f1f8ff; /* Color de fondo más suave (azul claro) */
+  color: #333;
+}
+
+header {
+  background-color: #00b0ff; /* Azul cielo más brillante */
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f1f8ff; /* Cambia el color a un tono más suave de azul al pasar el cursor */
+}
+
+/* Hero section with background image */
+.hero {
+  background-image: url('https://www.laclinicaveterinaria.com/wp-content/uploads/2023/11/El-Golden-Retriever.webp'); /* Ruta de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para que el texto sea legible */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #00b0ff; /* Azul cielo para los botones */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0091ea; /* Azul ligeramente más oscuro al pasar el cursor */
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #00b0ff; /* Azul cielo */
+  color: white;
+  margin-top: 3rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+
+/* historia del perro */
+
+/* Estilo de la sección */
+#historia {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  perspective: 1000px; /* Establece la perspectiva para la animación 3D */
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; /* Permite la animación 3D */
+  transition: transform 0.6s; /* Transición suave para el volteo */
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg); /* Voltea la tarjeta cuando se pasa el mouse */
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta la parte posterior cuando se voltea */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.card-front {
+  background-color: #fff;
+}
+
+.card-back {
+  background-color: #3ab5fc; /* Color de fondo para la parte posterior */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  transform: rotateY(180deg); /* Voltea la parte posterior para que sea invisible al principio */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Agrega un efecto de "flotante" a las imágenes */
+.card:hover .card-front img {
+  transform: scale(1.1); /* Amplía la imagen al pasar el mouse */
+}

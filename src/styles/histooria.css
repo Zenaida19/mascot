@@ -1,0 +1,127 @@
+.historia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.historia-card {
+  perspective: 1000px;
+  height: 290px;
+  width: 250px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.historia-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card-front img {
+  width: 220px;
+  height: 1000px; /* Ajusta la altura de la imagen para que se vea bien dentro de la tarjeta */
+  object-fit: cover; /* Asegura que la imagen cubra toda el área sin distorsionarse */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra sutil alrededor de la imagen */
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#historia {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  perspective: 1000px; /* Establece la perspectiva para la animación 3D */
+  border-radius: 12px; /* Redondea las esquinas de la tarjeta */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Agrega sombra a la tarjeta */
+  overflow: hidden; /* Asegura que nada sobresalga de los bordes */
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; /* Permite la animación 3D */
+  transition: transform 0.6s; /* Transición suave para el volteo */
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg); /* Voltea la tarjeta cuando se pasa el mouse */
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta la parte posterior cuando se voltea */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.card-front {
+  background-color: #fff;
+}
+
+.card-back {
+  background-color: #3ab5fc; /* Color de fondo para la parte posterior */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  transform: rotateY(180deg); /* Voltea la parte posterior para que sea invisible al principio */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Agrega un efecto de "flotante" a las imágenes */
+.card:hover .card-front img {
+  transform: scale(1.1); /* Amplía la imagen al pasar el mouse */
+}
