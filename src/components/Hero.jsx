@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
     <section id="inicio" className="hero">
       <h1>Bienvenido a PetCare</h1>
       <p>El mejor cuidado para tu mascota mientras tú no estás</p>
-      <a href="#reservas" className="btn">Reserva un servicio</a>
+      <Link to="/login" className="btn">Reserva un servicio</Link>
     </section>
   );
 }

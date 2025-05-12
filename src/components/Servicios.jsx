@@ -21,8 +21,6 @@ function Servicios() {
           <FaPaw className="service-icon" />
           <h3>Cuidado a Domicilio</h3>
           <p>Visitamos tu hogar para alimentar y cuidar a tu mascota.</p>
-          <div>HOLA XANDER</div>
-          <div>HOLA XANDER</div>
         </div>
       </div>
     </section>
