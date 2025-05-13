@@ -1,9 +1,9 @@
 .login-page {
     display: flex;
     height: 100vh;
-    background: linear-gradient(120deg, #141e30, #243b55);
+    background: linear-gradient(120deg, #730c82, #6fbde4);
     font-family: 'Segoe UI', sans-serif;
-    color: #fff;
+    color: #ffffff;
   }
   
   .login-left {
@@ -34,7 +34,7 @@
   
   .login-right {
     flex: 1;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(246, 247, 250, 0.906);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,10 +43,10 @@
   .login-form {
     width: 80%;
     max-width: 400px;
-    background: #222;
+    background: #02203a;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(86, 97, 202, 0.911);
   }
   
   .login-form h2 {
@@ -72,7 +72,7 @@
     position: absolute;
     right: 10px;
     top: 12px;
-    color: #ccc;
+    color: #cccccc;
   }
   
   .login-options {
@@ -86,15 +86,15 @@
     width: 100%;
     padding: 12px;
     border: none;
-    background-color: #ff416c;
-    color: white;
+    background-color: #616fda;
+    color: rgb(255, 255, 255);
     font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
   }
   
   .login-button:hover {
-    background-color: #ff4b2b;
+    background-color: #070da7;
   }
   
   .signup-link {

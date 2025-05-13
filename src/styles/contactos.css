@@ -83,4 +83,58 @@ form {
   button.btn:hover {
     background-color: #3d3fec;
   }
-  
+  .contact-info {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact-info p {
+  margin: 0.3rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-social {
+  margin-top: 1rem;
+}
+
+.contact-social a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #444;
+  transition: color 0.3s;
+}
+
+.contact-social a:hover {
+  color: #007bff;
+}
+.contact-info-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.info-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: #4CAF50;
+  margin-bottom: 0.5rem;
+}

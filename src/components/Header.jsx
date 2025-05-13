@@ -10,7 +10,6 @@ function Header() {
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#historias">Historias</a></li>
           <li><a href="#tienda">Tienda</a></li>
-          <li><a href="#reservas">Reservas</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
